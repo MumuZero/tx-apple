@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商店</title>
+		<link rel="stylesheet" type="text/css" href="./商店页面.css"/>
+	</head>
+	<body>
+		
+		<div class="daohanglan">
+			<ul class="part1">
+				<li><a href="#">商店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="MAC界面.html">Mac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="iphone界面.html">iPhone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="#">AirPods&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="#">家具&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="#">Apple 独家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="#">配件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="#">技术支持&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+			</ul></div>
+			
+			<div class="zimu">
+				<marquee behavior="" direction="up" height="30px" scrolldelay="200" style="text-align: center;">
+					<p>强的很</p>  <p>Pro 级摄像头系统</p>  <p>AES 加密硬件</p>
+					</marquee>
+			</div>
+			
+				<div class="first">
+<ul class="sd">
+	<li class="shangdian">这个商店,</li>
+	<li class="tiyan">产品都称心,体验更如意</li>
+</ul>
+</div>
+
+
+<div id="mac">
+		<a href="MAC界面.html"><img src="图片/store-card-mac-nav-202110%20-%20副本.png" ></a>
+</div>
+<div id="iphone">
+	<ul>
+		<a href="iphone界面.html"><img src="图片/iphone%20-%20副本.png" ></a>
+	</ul>
+</div>
+	
+	<div id="iwatch">
+		<ul>
+			<li><img src="./图片/watch%20-%20副本.png" ></li>
+		</ul>
+	</div>
+	
+	<div id="airpots">
+		<ul>
+			<li><img src="图片/airpots.png" ></li>
+		</ul>
+	</div>
+	<div id="airtag">
+		<ul>
+			<li><img src="图片/airtag.png" ></li>
+		</ul>
+	</div>
+	
+	<div id="homepod">
+		<ul>
+			<li><img src="图片/homepod%20-%20副本.png" ></li>
+		</ul>
+	</div>
+
+
+<div class="scend">
+<ul class="sd2">
+	<li class="shangxin">上新了,</li>
+	<li class="renshi">快来认识这些新朋友</li>
+</ul>
+</div>
+	
+	
+
+		<div id="demo">
+			<table>
+				<tr>
+					<td id="marqueePic1">
+						<table class="tb">
+							<tr>
+								<td id="hd1">
+									<img src="图片/商店滑动.jpg" />
+								</td>
+								<td id="hd2">
+									<img src="图片/商店滑动7.jpg" />
+								</td>
+								<td id="hd3">
+									<img src="图片/商店滑动2.jpg" />
+								</td>
+								<td id="hd4">
+									<img src="图片/商店滑动3.jpg" />
+								</td>
+								<td id="hd5">
+									<img src="图片/商店滑动5.jpg" />
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td id="marqueePic2">
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="demo1"></div>
+		<script>
+					var demo=document.getElementById('demo');
+					var pic1=document.getElementById('marqueePic1');
+					var pic2=document.getElementById('marqueePic2');
+					pic2.innerHTML=pic1.innerHTML;
+					var speed=20;
+					
+					var demo1=document.getElementById('demo1');
+					
+					function Marquee(){
+						if (demo.scrollLeft>=pic1.scrollWidth) {
+							demo.scrollLeft=0; 
+						} 
+						else{
+							demo.scrollLeft++;
+						}
+					}
+					var myMarquee=setInterval(Marquee,1);
+					demo.onmouseover=function(){
+						clearInterval(myMarquee);
+					};
+					demo.onmouseout=function(){
+						myMarquee=setInterval(Marquee,speed);
+					};
+				</script>
+
+
+<div class="third">
+<ul class="sd3">
+	<li class="bangshou">帮手在此</li>
+	<li class="shishi">时时待命应你所需</li>
+</ul>
+</div>
+	<div id="tx">
+	
+	<div class="zhuanjia">
+		<ul id="zhuanjia1">
+			<li><img src="图片/专家.jpg" ></li>
+		</ul>
+	</div>
+	
+	<div class="zhuanren">
+		<ul id="zhuanren1">
+			<li><img src="图片/专人.jpg" ></li>
+		</ul>
+	</div>
+	
+	
+	<div class="zhuanye">
+		<ul id="zhuanye1">
+			<li><img src="图片/专业.jpg" ></li>
+		</ul>
+	</div>
+	
+	
+	<div class="card">
+			<img src="图片/乔布斯.jpg" >
+			<p class="qiaobusi">史蒂夫<br>在乔布斯的产品字典中<br>只有两种类型<br>要么是完美的产品<br>要么是垃圾的产品</p>
+		</div>
+		<div class="card2">
+				<img src="图片/库克.jpg" >
+				<p class="kuke">TimCook<br>蒂姆·库克是一位与史蒂夫·乔布斯<br>截然不同的CEO</p>
+		</div>
+	
+	<div class="card3">
+			<img src="图片/iPhone4.jpg">
+		</div>
+		<div class="card4">
+				<img src="图片/iphonex.jpg" >
+		</div>
+
+	</body>
+</html>
